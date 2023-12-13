@@ -55,8 +55,8 @@ while (~isempty(scoreList))
         CanList=[CanList b];
         scoreList(ii,:)=[];
     else
-        Nscore=NeigDisList{b}(1)/M*Density(b);
-        nZ=[NLabel(b) NLabel(NeigInsList{b}(1)) Nscore];
+      
+        nZ=[NLabel(b) NLabel(NeigInsList{b}(1)) a];
         NLabel(NLabel==NLabel(b))=Nindex;
         NLabel(NLabel==NLabel(NeigInsList{b}(1)))=Nindex;
         Nindex=Nindex+1;
